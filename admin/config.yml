@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "ja"
+
+collections:
+  - name: "site"
+    label: "サイト"
+    files:
+      - name: "content"
+        label: "コンテンツ"
+        file: "content/site.json"
+        fields:
+          - { label: "ヒーロー文言", name: "heroCatchcopy", widget: "string" }
+          - { label: "問い合わせメール", name: "contactEmail", widget: "string" }
+          - { label: "電話番号", name: "contactPhone", widget: "string" }
+          - { label: "代表 肩書き", name: "representativeRole", widget: "string" }
+          - { label: "代表 氏名", name: "representativeName", widget: "string" }
+          - { label: "代表 写真", name: "representativePhoto", widget: "image", required: false }
+          - { label: "代表 メッセージ", name: "representativeMessage", widget: "text", required: false }
+

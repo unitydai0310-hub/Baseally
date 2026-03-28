@@ -1,0 +1,10 @@
+{
+  "name": "baseally-official-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "start": "node dev-server.mjs"
+  }
+}
+
