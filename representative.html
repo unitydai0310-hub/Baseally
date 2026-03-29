@@ -13,7 +13,12 @@
     <meta property="og:title" content="代表紹介｜Baseally" />
     <meta property="og:description" content="Baseally代表・結束大智の紹介ページ。" />
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
+    <link rel="icon" type="image/jpeg" href="assets/icon.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
@@ -23,7 +28,7 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Baseally トップへ">
-          <img class="brand-mark" src="assets/logo.svg" width="28" height="28" alt="" />
+          <img class="brand-mark" src="assets/icon-32.png" width="28" height="28" alt="" />
           <span class="brand-name">Baseally</span>
         </a>
 
@@ -33,9 +38,13 @@
         </button>
 
         <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
+          <a href="enterprise.html">企業の方へ</a>
           <a href="representative.html" aria-current="page">代表紹介</a>
           <a href="index.html#about">私たちについて</a>
           <a href="index.html#services">事業内容</a>
+          <a href="index.html#community">コミュニティ</a>
+          <a href="index.html#events">就活イベント</a>
+          <a href="index.html#sales">営業部隊</a>
           <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
         </nav>
       </div>
@@ -47,9 +56,7 @@
           <div class="section-head">
             <h1>代表紹介</h1>
             <p class="muted">
-              <span data-content="representativeRole">Baseally 代表</span>　<span data-content="representativeName"
-                >結束大智</span
-              >
+              Baseally 代表　結束大智
             </p>
           </div>
 
@@ -61,7 +68,6 @@
                 height="1100"
                 alt="代表写真"
                 loading="lazy"
-                data-content-src="representativePhoto"
               />
             </div>
             <div class="rep-detail-body">
@@ -69,26 +75,22 @@
                 <h2>連絡先</h2>
                 <p>
                   メール：
-                  <a href="mailto:daichi.kessoku@baseally.jp" data-content="contactEmail"
-                    >daichi.kessoku@baseally.jp</a
-                  >
+                  <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
                 </p>
                 <p>
-                  電話番号：<a href="tel:08020171310" data-content="contactPhone">080-2017-1310</a>
+                  電話番号：<a href="tel:08020171310">080-2017-1310</a>
                 </p>
               </div>
 
               <div class="panel reveal">
-                <h2>メッセージ（追記欄）</h2>
-                <p class="muted">※ここは後ほど内容を差し替えて仕上げる想定です。</p>
-                <p style="margin: 0" data-content="representativeMessage">
-                  野球に育てられた経験を、次の挑戦へつなげる。Baseallyは「野球に恩返し」をモットーに、甲子園出場者限定のコミュニティ運営、
-                  就活イベント開催、野球部出身者による営業部隊を運営します。
+                <h2>メッセージ</h2>
+                <p style="margin: 0">
+                  私たち甲子園球児は、圧倒的な体力とメンタル、仲間と本音をぶつけ合ってきたからこそのコミュニケーション力を持ち合わせています。野球に育てられた経験を次の挑戦へと繋げる。Baseallyは「野球に恩返し」をモットーに、甲子園出場者限定のコミュニティ運営、就活イベント開催、野球部出身者による営業部隊を運営します。
                 </p>
               </div>
 
               <div class="panel reveal">
-                <h2>プロフィール（追記欄）</h2>
+                <h2>プロフィール</h2>
                 <ul class="list">
                   <li>甲子園：〇〇（春／夏／年度、役割など）</li>
                   <li>甲子園優勝：〇〇（大会名・年度）</li>
@@ -104,7 +106,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="footer-brand">
-          <img src="assets/logo.svg" width="18" height="18" alt="" />
+          <img src="assets/icon-32.png" width="18" height="18" alt="" />
           <span>Baseally</span>
         </p>
         <p class="muted">© <span id="year"></span> Baseally. All rights reserved.</p>

@@ -19,7 +19,12 @@
       content="甲子園優勝メンバーが立ち上げた。野球に恩返しをモットーに、甲子園出場者限定コミュニティ／就活イベント／営業部隊を運営。"
     />
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
+    <link rel="icon" type="image/jpeg" href="assets/icon.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
@@ -29,7 +34,7 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Baseally トップへ">
-          <img class="brand-mark" src="assets/logo.svg" width="28" height="28" alt="" />
+          <img class="brand-mark" src="assets/icon-32.png" width="28" height="28" alt="" />
           <span class="brand-name">Baseally</span>
         </a>
 
@@ -39,6 +44,7 @@
         </button>
 
         <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
+          <a href="enterprise.html">企業の方へ</a>
           <a href="representative.html">代表紹介</a>
           <a href="#about">私たちについて</a>
           <a href="#services">事業内容</a>
@@ -54,7 +60,7 @@
       <section id="top" class="hero">
         <div class="container hero-inner">
           <div class="hero-plate">
-            <h1 class="hero-plate-title" data-content="heroCatchcopy">「打席がある限り、僕らは躍動し続ける」</h1>
+            <h1 class="hero-plate-title">「打席がある限り、僕らは躍動し続ける」</h1>
           </div>
         </div>
       </section>
@@ -108,18 +114,21 @@
               <a class="card-link" href="#community">詳しく見る</a>
             </article>
 
-            <article class="card reveal">
-              <div class="card-top">
-                <h3>就活イベント開催</h3>
-                <p class="card-sub">本気の企業と、本気の人材をつなぐ。</p>
-              </div>
+	            <article class="card reveal">
+	              <div class="card-top">
+	                <h3>就活イベント開催</h3>
+	                <p class="card-sub">本気の企業と、本気の人材をつなぐ。</p>
+	              </div>
               <ul class="list">
                 <li>甲子園出場者・野球部出身者のキャリア機会創出</li>
                 <li>企業と候補者が深く話せる少人数設計</li>
                 <li>挑戦を評価する文化づくり</li>
-              </ul>
-              <a class="card-link" href="#events">詳しく見る</a>
-            </article>
+	              </ul>
+	              <div class="card-actions">
+	                <a class="card-link" href="#events">詳しく見る</a>
+	                <a class="button ghost small" href="enterprise.html">企業の方へ</a>
+	              </div>
+	            </article>
 
             <article class="card reveal">
               <div class="card-top">
@@ -179,16 +188,19 @@
               </ul>
             </div>
 
-            <div class="panel reveal">
-              <h3>企業の方へ</h3>
-              <ul class="list">
-                <li>当事者コミュニティならではの母集団形成</li>
-                <li>少人数で深く見極められるイベント設計</li>
-                <li>採用広報・ブランディング支援も相談可能</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+	            <div class="panel reveal">
+	              <h3>企業の方へ</h3>
+	              <ul class="list">
+	                <li>当事者コミュニティならではの母集団形成</li>
+	                <li>少人数で深く見極められるイベント設計</li>
+	                <li>採用広報・ブランディング支援も相談可能</li>
+	              </ul>
+	              <div class="panel-actions">
+	                <a class="button ghost small" href="enterprise.html">企業の方へ</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
       </section>
 
       <section id="sales" class="section">
@@ -224,9 +236,7 @@
         <div class="container cta-inner reveal">
           <div>
             <h2>次の打席を、一緒につくろう。</h2>
-            <p class="muted">
-              コミュニティ参加、イベント出展、営業支援のご相談など、まずは気軽にご連絡ください。
-            </p>
+            <p class="muted">コミュニティ参加、イベント出展、営業支援のご相談など、まずは気軽にご連絡ください。</p>
           </div>
           <a class="button primary" href="#contact">お問い合わせ</a>
         </div>
@@ -244,13 +254,9 @@
               <h3>連絡先</h3>
               <p>
                 メール：
-                <a href="mailto:daichi.kessoku@baseally.jp" data-content="contactEmail"
-                  >daichi.kessoku@baseally.jp</a
-                >
+                <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
               </p>
-              <p>
-                電話番号：<a href="tel:08020171310" data-content="contactPhone">080-2017-1310</a>
-              </p>
+              <p>電話番号：<a href="tel:08020171310">080-2017-1310</a></p>
             </div>
 
             <div class="panel reveal">
@@ -271,7 +277,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="footer-brand">
-          <img src="assets/logo.svg" width="18" height="18" alt="" />
+          <img src="assets/icon-32.png" width="18" height="18" alt="" />
           <span>Baseally</span>
         </p>
         <p class="muted">© <span id="year"></span> Baseally. All rights reserved.</p>

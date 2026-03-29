@@ -154,6 +154,28 @@ img {
   border-radius: 10px;
 }
 
+@media (min-width: 861px) {
+  .page-enterprise .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    font-size: 12px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-enterprise .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .page-enterprise .site-nav a {
+    flex: 0 0 auto;
+    padding: 9px 8px;
+  }
+}
+
 .site-nav a:focus-visible {
   outline: 2px solid rgba(11, 47, 74, 0.38);
   outline-offset: 2px;
@@ -224,9 +246,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    url("assets/hero.jpg"),
-    url("https://ondankataisaku.env.go.jp/coolchoice/sports/img/upload/topics/2022/1/koshien/pic01.jpg");
+  background-image: url("assets/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,17 +269,17 @@ img {
   z-index: 1;
   display: grid;
   gap: 16px;
-  justify-items: center;
+  justify-items: stretch;
+}
+
+.hero-content {
+  width: min(960px, 100%);
+  justify-self: start;
 }
 
 .hero-plate {
   width: min(980px, 100%);
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
+  justify-self: center;
   text-align: center;
 }
 
@@ -274,6 +294,97 @@ img {
   text-shadow:
     0 18px 60px rgba(0, 0, 0, 0.45),
     0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.hero-kicker {
+  margin: 0 0 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-headline {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: clamp(30px, 4.0vw, 56px);
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow:
+    0 18px 70px rgba(0, 0, 0, 0.52),
+    0 2px 16px rgba(0, 0, 0, 0.48);
+}
+
+.page-enterprise .hero-headline {
+  white-space: nowrap;
+  font-size: clamp(16px, 4.8vw, 50px);
+}
+
+.hero-sub {
+  margin: 0 0 18px;
+  max-width: 820px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 12px;
+}
+
+.hero-value {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 900px;
+}
+
+.hero-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 2px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+}
+
+.hero-more::after {
+  content: "→";
+  opacity: 0.9;
+}
+
+.hero-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero .button {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero .button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+.hero .button.primary {
+  background: rgba(255, 255, 255, 0.92);
+  color: rgba(14, 16, 19, 0.92);
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
+}
+
+.hero .button.primary:hover {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 .button {
@@ -453,6 +564,35 @@ img {
   opacity: 0.95;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.button.small {
+  padding: 9px 14px;
+  font-size: 12px;
+}
+
+.button.ghost.small {
+  background: rgba(11, 47, 74, 0.06);
+  border-color: rgba(11, 47, 74, 0.12);
+  color: rgba(11, 47, 74, 0.92);
+}
+
+.button.ghost.small:hover {
+  background: rgba(11, 47, 74, 0.10);
+}
+
+.panel-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .template {
   margin: 0;
   padding: 14px 14px;
@@ -489,6 +629,13 @@ img {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.62));
   box-shadow: var(--shadow);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 .site-footer {
@@ -530,25 +677,28 @@ img {
   .hero {
     padding: 108px 0 48px;
   }
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
   .cards {
     grid-template-columns: 1fr;
   }
   .grid.two {
     grid-template-columns: 1fr;
   }
-  .hero-points {
-    grid-template-columns: 1fr;
-  }
   .cta-inner {
     flex-direction: column;
     align-items: flex-start;
   }
+  .cta-actions {
+    justify-content: flex-start;
+  }
 
   .rep-detail {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-plate-title {
+    white-space: normal;
   }
 }
 
