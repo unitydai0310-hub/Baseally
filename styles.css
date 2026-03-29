@@ -224,7 +224,9 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://ondankataisaku.env.go.jp/coolchoice/sports/img/upload/topics/2022/1/koshien/pic01.jpg");
+  background-image:
+    url("assets/hero.jpg"),
+    url("https://ondankataisaku.env.go.jp/coolchoice/sports/img/upload/topics/2022/1/koshien/pic01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

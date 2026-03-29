@@ -32,6 +32,7 @@ python3 -m http.server 8000
 - 文章・提供形態・参加条件などの詳細は、運用に合わせて調整してください
 - 代表写真：`assets/representative-placeholder.svg` を差し替えるか、`representative.html` の画像パスを変更してください
   - CMS運用にする場合は、`content/site.json` の `representativePhoto` が更新されます
+- ヒーロー画像：`assets/hero.jpg` を配置すると自動で差し替わります（`styles.css` の `.hero::before`）
 
 ## ページ
 
