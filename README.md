@@ -51,6 +51,7 @@ python3 -m http.server 8000
 ### Netlify 側の設定手順（概要）
 
 1) Site settings で Git 連携してデプロイ
+   - 本リポジトリには `netlify.toml` を同梱しているため、Publish ディレクトリはリポジトリ直下（`.`）に固定されます
 2) Identity を有効化
 3) Identity の設定で Git Gateway を有効化
 4) 招待したユーザーだけがログインできるようにする（Invite で追加）
