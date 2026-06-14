@@ -1,117 +1,115 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f2ea" />
-
-    <title>代表紹介｜Baseally</title>
+    <meta name="theme-color" content="#f3f1ea" />
+    <title>代表紹介 | Baseally</title>
     <meta name="description" content="Baseally代表・結束大智の紹介ページです。" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Baseally" />
-    <meta property="og:title" content="代表紹介｜Baseally" />
-    <meta property="og:description" content="Baseally代表・結束大智の紹介ページ。" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
     <link rel="icon" type="image/jpeg" href="assets/icon.jpg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">本文へスキップ</a>
+  <body class="page-representative">
+    <div class="opening" aria-hidden="true">
+      <div class="opening-panel"></div>
+      <div class="opening-panel"></div>
+      <p>代表紹介</p>
+    </div>
+    <div class="cursor-ball" aria-hidden="true" data-cursor-ball></div>
 
     <header class="site-header" data-header>
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Baseally トップへ">
-          <img class="brand-mark" src="assets/icon-32.png" width="28" height="28" alt="" />
-          <span class="brand-name">Baseally</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-          <span class="sr-only">メニュー</span>
-          <span class="nav-toggle-bars" aria-hidden="true"></span>
-        </button>
-
-        <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
-          <a href="enterprise.html">企業の方へ</a>
-          <a href="representative.html" aria-current="page">代表紹介</a>
-          <a href="index.html#about">私たちについて</a>
-          <a href="index.html#services">事業内容</a>
-          <a href="index.html#community">コミュニティ</a>
-          <a href="index.html#events">就活イベント</a>
-          <a href="index.html#sales">営業部隊</a>
-          <a href="index.html#contact" class="nav-cta">お問い合わせ</a>
-        </nav>
-      </div>
+      <a class="brand" href="index.html" aria-label="Baseally トップへ">
+        <img src="assets/icon.jpg" alt="BASEALLY" />
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
+        <a href="index.html#about">Baseallyとは</a>
+        <div class="nav-dropdown">
+          <a href="index.html#business">事業内容</a>
+          <div class="nav-submenu">
+            <a href="event.html">イベント</a>
+            <a href="sales.html">営業事業</a>
+            <a href="charity.html">野球に恩返し</a>
+          </div>
+        </div>
+        <a href="representative.html" aria-current="page">代表紹介</a>
+        <a href="index.html#contact">お問い合わせ</a>
+        <a href="https://www.instagram.com/baseally_official?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">公式Instagram</a>
+      </nav>
     </header>
 
-    <main id="main">
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <h1>代表紹介</h1>
-            <p class="muted">
-              Baseally 代表　結束大智
+    <main>
+      <section class="rep-hero" aria-labelledby="rep-page-title">
+        <div class="rep-hero-title reveal">
+          <p class="section-label">Representative</p>
+          <h1 id="rep-page-title">結束 大智</h1>
+          <p>Baseally 代表</p>
+        </div>
+        <div class="rep-hero-photo reveal">
+          <img src="assets/profile.jpg" alt="Baseally代表 結束大智の写真" />
+        </div>
+      </section>
+
+      <section class="rep-message" aria-labelledby="message-title">
+        <div class="section-label reveal">Message</div>
+        <div class="rep-message-grid">
+          <h2 id="message-title" class="line-title">
+            <span class="reveal-line">野球に育てられた経験を、</span>
+            <span class="reveal-line">次の挑戦へ。</span>
+          </h2>
+          <div class="rep-message-body reveal">
+            <p>
+              私たち高校球児は、圧倒的な体力とメンタル、そして、仲間と本音をぶつけ合ってきたからこそのコミュニケーション力を持ち合わせています。
+            </p>
+            <p>
+              「野球を本気でやり抜いた学生には、社会を変える力がある。」<br />
+              本気でそう思うからこそ、Baseallyは野球に人生を懸けてきた学生の次の挑戦を支援します。そして、その力を必要とする企業との出会いを創ります。
+            </p>
+            <p>
+              自分自身、甲子園優勝という最高の舞台を経験したからこそ、誰よりも野球部の良さを知っています。
+            </p>
+            <p>
+              「野球に恩返し」<br />
+              この言葉をモットーにBaseallyは進み続けます。
             </p>
           </div>
+        </div>
+      </section>
 
-          <div class="rep-detail">
-            <div class="rep-detail-media">
-              <img
-                src="assets/profile.jpg"
-                width="1045"
-                height="1567"
-                alt="Baseally代表 結束大智の写真"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="rep-detail-body">
-              <div class="panel">
-                <h2>連絡先</h2>
-                <p>
-                  メール：
-                  <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
-                </p>
-                <p>
-                  電話番号：<a href="tel:08020171310">080-2017-1310</a>
-                </p>
-              </div>
-
-              <div class="panel reveal">
-                <h2>メッセージ</h2>
-                <p style="margin: 0">
-                  私たち甲子園球児は、圧倒的な体力とメンタル、仲間と本音をぶつけ合ってきたからこそのコミュニケーション力を持ち合わせています。野球に育てられた経験を次の挑戦へと繋げる。Baseallyは「野球に恩返し」をモットーに、甲子園出場者限定のコミュニティ運営、就活イベント開催、野球部出身者による営業部隊を運営します。
-                </p>
-              </div>
-
-              <div class="panel reveal">
-                <h2>プロフィール</h2>
-                <ul class="list">
-                  <li>第96回選抜高等学校野球大会 優勝（2024年春）メンバー</li>
-                  <li>立教大学 経営学部 所属</li>
-                  <li>学生起業家連合 メンバー</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <section class="profile-section" aria-labelledby="profile-title">
+        <div class="profile-card reveal">
+          <p class="section-label">Profile</p>
+          <h2 id="profile-title">プロフィール</h2>
+          <ul>
+            <li>江戸崎ボーイズ 出身</li>
+            <li>第96回選抜高等学校野球大会（2024年春の甲子園）優勝メンバー</li>
+            <li>立教大学 経営学部 所属</li>
+          </ul>
+        </div>
+        <div class="profile-card dark reveal">
+          <p class="section-label">Contact</p>
+          <h2>連絡先</h2>
+          <p><a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a></p>
+          <p><a href="tel:08020171310">080-2017-1310</a></p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-brand">
-          <img src="assets/icon-32.png" width="18" height="18" alt="" />
-          <span>Baseally</span>
-        </p>
-        <p class="muted">© <span id="year"></span> Baseally. All rights reserved.</p>
+      <img src="assets/icon.jpg" alt="BASEALLY" />
+      <p>野球に育てられた経験を、次の挑戦へ。</p>
+      <div class="footer-contact" aria-label="連絡先">
+        <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
+        <a href="tel:08020171310">080-2017-1310</a>
+        <a href="https://www.instagram.com/baseally_official?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">公式Instagram</a>
       </div>
+      <small>&copy; <span id="year"></span> Baseally. All rights reserved.</small>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,288 +1,151 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f2ea" />
-    <meta name="google-site-verification" content="4fLOtFybBgJi8GpCk3-D2ylCLC7tvLtR6P6oBBlV1wg" />
-
-    <title>野球部出身者のコミュニティ | 就活イベント・最強の営業代行組織を構築するBaseally</title>
+    <meta name="theme-color" content="#f3f1ea" />
+    <title>Baseally | 打席がある限り、僕らは躍動し続ける</title>
     <meta
       name="description"
-      content="野球部出身者のコミュニティを基盤に、就活イベントと営業代行組織を構築。競技で培った力を社会で活かし、新たなキャリアと価値創出の場を提供します。"
+      content="Baseallyは、野球部出身者向け就活イベント、野球部出身者による営業部隊、野球を通した慈善事業を展開しています。"
     />
-
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Baseally（ベイサリー）" />
-    <meta property="og:title" content="Baseally（ベイサリー）｜打席がある限り、僕らは躍動し続ける" />
+    <meta property="og:site_name" content="Baseally" />
+    <meta property="og:title" content="Baseally | 打席がある限り、僕らは躍動し続ける" />
     <meta
       property="og:description"
-      content="甲子園優勝メンバーが立ち上げた。野球に恩返しをモットーに、甲子園出場者限定コミュニティ／就活イベント／営業部隊を運営。"
+      content="野球を本気でやり抜いた学生の次の挑戦を支援し、その力を必要とする企業との出会いを創ります。"
     />
-
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon-48.png" />
     <link rel="icon" type="image/jpeg" href="assets/icon.jpg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preload" as="image" href="assets/hero.png" />
+    <link rel="preload" as="image" href="assets/icon.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">本文へスキップ</a>
+    <div class="opening" aria-hidden="true">
+      <div class="opening-panel"></div>
+      <div class="opening-panel"></div>
+      <p>Baseally</p>
+    </div>
+    <div class="cursor-ball" aria-hidden="true" data-cursor-ball></div>
 
     <header class="site-header" data-header>
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Baseally トップへ">
-          <img class="brand-mark" src="assets/icon-32.png" width="28" height="28" alt="" />
-          <span class="brand-name">Baseally（ベイサリー）</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-          <span class="sr-only">メニュー</span>
-          <span class="nav-toggle-bars" aria-hidden="true"></span>
-        </button>
-
-        <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
-          <a href="enterprise.html">企業の方へ</a>
-          <a href="representative.html">代表紹介</a>
-          <a href="#about">私たちについて</a>
-          <a href="#services">事業内容</a>
-          <a href="#community">コミュニティ</a>
-          <a href="#events">就活イベント</a>
-          <a href="#sales">営業部隊</a>
-          <a class="nav-cta" href="#contact">お問い合わせ</a>
-        </nav>
-      </div>
+      <a class="brand" href="#top" aria-label="Baseally トップへ">
+        <img src="assets/icon.jpg" alt="BASEALLY" />
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション" data-nav>
+        <a href="#about">Baseallyとは</a>
+        <div class="nav-dropdown">
+          <a href="#business">事業内容</a>
+          <div class="nav-submenu">
+            <a href="event.html">イベント</a>
+            <a href="sales.html">営業事業</a>
+            <a href="charity.html">野球に恩返し</a>
+          </div>
+        </div>
+        <a href="representative.html">代表紹介</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="https://www.instagram.com/baseally_official?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">公式Instagram</a>
+      </nav>
     </header>
 
-    <main id="main">
-      <section id="top" class="hero">
-        <div class="container hero-inner">
-          <div class="hero-plate">
-            <h1 class="hero-plate-title">「打席がある限り、僕らは躍動し続ける」</h1>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-statement reveal">「打席がある限り、僕らは躍動し続ける」</h1>
+        </div>
+      </section>
+
+      <section class="statement compact" id="about" aria-labelledby="about-title">
+        <div class="section-label reveal">About Baseally</div>
+        <div class="statement-grid">
+          <h2 id="about-title" class="line-title">
+            <span class="reveal-line"><span class="no-wrap">野球を本気でやり抜いた学生には、</span></span>
+            <span class="reveal-line">社会を変える力がある。</span>
+          </h2>
+          <div class="statement-body reveal">
+            <p>
+              Baseallyは、野球に人生を懸けてきた学生の次の挑戦を支援し、その力を必要とする企業との出会いを創ります。
+            </p>
+            <a class="arrow-link" href="representative.html">代表メッセージを読む</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>私たちについて</h2>
-            <p>勝利の経験を、次の世代と社会へ。</p>
-          </div>
-
-          <div class="grid two">
-            <div class="panel reveal">
-              <h3>ミッション</h3>
-              <p>
-                野球から受け取ったものを、もう一度野球へ。<br />
-                Baseally（ベイサリー）は「野球に恩返し」を合言葉に、挑戦し続ける人の背中を押します。
-              </p>
-            </div>
-
-            <div class="panel reveal">
-              <h3>スタンス</h3>
-              <ul class="list">
-                <li>信頼：同じ舞台を踏んだ仲間だからこその結束</li>
-                <li>熱量：結果にこだわり、動き続ける実行力</li>
-                <li>継承：経験を循環させ、次の挑戦へつなげる</li>
-              </ul>
-            </div>
-          </div>
+      <section class="business compact" id="business" aria-labelledby="business-title">
+        <div class="section-label reveal">Business</div>
+        <div class="business-intro">
+          <h2 id="business-title" class="line-title">
+            <span class="reveal-line">事業内容</span>
+          </h2>
+        </div>
+        <div class="service-grid">
+          <a class="service-card reveal" href="event.html">
+            <span>01</span>
+            <h3>野球部出身者向け<br>就活イベント</h3>
+            <p>企業と野球部出身学生が、採用前から深く出会う場をつくります。</p>
+          </a>
+          <a class="service-card reveal" href="sales.html">
+            <span>02</span>
+            <h3>野球部出身者による営業部隊</h3>
+            <p>やり切る力とチームで勝つ力を、企業の営業成果へつなげます。</p>
+          </a>
+          <a class="service-card reveal" href="charity.html">
+            <span>03</span>
+            <h3>野球を通した<br>慈善事業</h3>
+            <p>野球に受け取ったものを、次の世代と地域へ循環させます。</p>
+          </a>
         </div>
       </section>
 
-      <section id="services" class="section section-alt">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>事業内容</h2>
-            <p>コミュニティ × イベント × 営業。野球で培った強さを、社会の価値に変える。</p>
-          </div>
-
-          <div class="cards">
-            <article class="card reveal">
-              <div class="card-top">
-                <h3>甲子園出場者限定コミュニティ</h3>
-                <p class="card-sub">“出場者だけ”の安心と濃さ。</p>
-              </div>
-              <ul class="list">
-                <li>甲子園出場経験者限定のオンライン／オフライン交流</li>
-                <li>情報交換、相談、協業につながる場の設計</li>
-                <li>野球界への還元につながる取り組みの企画</li>
-              </ul>
-              <a class="card-link" href="#community">詳しく見る</a>
-            </article>
-
-	            <article class="card reveal">
-	              <div class="card-top">
-	                <h3>就活イベント開催</h3>
-	                <p class="card-sub">本気の企業と、本気の人材をつなぐ。</p>
-	              </div>
-              <ul class="list">
-                <li>野球部出身者のキャリア機会創出</li>
-                <li>企業と候補者が深く話せる少人数設計</li>
-                <li>挑戦を評価する文化づくり</li>
-	              </ul>
-	              <div class="card-actions">
-	                <a class="card-link" href="#events">詳しく見る</a>
-	                <a class="button ghost small" href="enterprise.html">企業の方へ</a>
-	              </div>
-	            </article>
-
-            <article class="card reveal">
-              <div class="card-top">
-                <h3>最強の営業部隊の運営</h3>
-                <p class="card-sub">圧倒的な情熱と、勝ち切る習慣。</p>
-              </div>
-              <ul class="list">
-                <li>野球部出身者を中心とした営業組織を運営</li>
-                <li>行動量だけでなく、再現性のある型を磨く</li>
-                <li>チームで目標を追い、成果にコミット</li>
-              </ul>
-              <a class="card-link" href="#sales">詳しく見る</a>
-            </article>
-          </div>
+      <section class="representative-teaser compact" id="representative" aria-labelledby="rep-title">
+        <div class="rep-photo reveal">
+          <img src="assets/profile.jpg" alt="Baseally代表 結束大智" loading="lazy" />
+        </div>
+        <div class="rep-copy reveal">
+          <p class="section-label">Representative</p>
+          <h2 id="rep-title">代表紹介</h2>
+          <p class="rep-name">Baseally 代表　結束大智</p>
+          <a class="arrow-link" href="representative.html">詳しく見る</a>
         </div>
       </section>
 
-      <section id="community" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>甲子園出場者限定コミュニティ</h2>
-            <p>同じ舞台を経験した仲間と、次の挑戦を加速させる。</p>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner reveal">
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">次の打席を、<br>一緒につくろう。</h2>
+          <p>イベント出展、営業支援、慈善事業の連携など、まずはお気軽にご連絡ください。</p>
+          <div class="contact-info">
+            <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
+            <a href="tel:08020171310">080-2017-1310</a>
           </div>
-
-          <div class="grid two">
-            <div class="panel reveal">
-              <h3>参加条件</h3>
-              <p>甲子園（春・夏）に出場経験がある方。</p>
-              <p class="muted">※参加方法はお問い合わせ後にご案内します。</p>
-            </div>
-            <div class="panel reveal">
-              <h3>できること</h3>
-              <ul class="list">
-                <li>近況共有・相談・案件相談</li>
-                <li>OB/OGネットワークを活かした機会創出</li>
-                <li>野球界への還元企画（協賛、支援、イベント）</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="events" class="section section-alt">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>就活イベント</h2>
-            <p>努力が報われる出会いを、設計する。</p>
-          </div>
-
-          <div class="grid two">
-            <div class="panel reveal">
-              <h3>候補者の方へ</h3>
-              <ul class="list">
-                <li>野球部出身者が本気の企業と直接対話できる場を提供</li>
-                <li>強みの言語化から面談設計までサポート</li>
-                <li>野球で培った力を、武器に変える</li>
-              </ul>
-            </div>
-
-	            <div class="panel reveal">
-	              <h3>企業の方へ</h3>
-	              <ul class="list">
-	                <li>野球部出身者ネットワークならではの母集団形成</li>
-	                <li>少人数で深く見極められるイベント設計</li>
-	                <li>採用広報・ブランディング支援も相談可能</li>
-	              </ul>
-	              <div class="panel-actions">
-	                <a class="button ghost small" href="enterprise.html">企業の方へ</a>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-      </section>
-
-      <section id="sales" class="section">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>最強の営業部隊</h2>
-            <p>野球部出身者の強さを、成果に変える。</p>
-          </div>
-
-          <div class="grid two">
-            <div class="panel reveal">
-              <h3>チーム像</h3>
-              <ul class="list">
-                <li>素直に学び、型を磨き、行動し続ける</li>
-                <li>チームで勝ちにいく（連携・報連相・改善）</li>
-                <li>目標達成に対して、最後までやり切る</li>
-              </ul>
-            </div>
-            <div class="panel reveal">
-              <h3>提供できる価値</h3>
-              <ul class="list">
-                <li>新規開拓、商談獲得、フィールドセールス支援</li>
-                <li>営業組織立ち上げの伴走</li>
-                <li>勝てる習慣づくり（プロセス設計・KPI運用）</li>
-              </ul>
-              <p class="muted">※提供形態は案件により調整します。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section cta">
-        <div class="container cta-inner reveal">
-          <div>
-            <h2>次の打席を、一緒につくろう。</h2>
-            <p class="muted">コミュニティ参加、イベント出展、営業支援のご相談など、まずは気軽にご連絡ください。</p>
-          </div>
-          <a class="button primary" href="#contact">お問い合わせ</a>
-        </div>
-      </section>
-
-      <section id="contact" class="section section-alt">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>お問い合わせ</h2>
-            <p>ご相談内容（コミュニティ／イベント／営業）を添えてご連絡ください。</p>
-          </div>
-
-          <div class="grid two">
-            <div class="panel reveal">
-              <h3>連絡先</h3>
-              <p>
-                メール：
-                <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
-              </p>
-              <p>電話番号：<a href="tel:08020171310">080-2017-1310</a></p>
-            </div>
-
-            <div class="panel reveal">
-              <h3>テンプレ</h3>
-              <p class="muted">本文にこのまま貼り付けて使えます。</p>
-              <pre class="template" aria-label="問い合わせテンプレート">【区分】（コミュニティ／イベント／営業）
-【お名前】
-【所属】（任意）
-【概要】
-【希望連絡方法】（メール／電話）
-【その他】</pre>
-            </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:daichi.kessoku@baseally.jp?subject=Baseallyへの問い合わせ">メールで問い合わせる</a>
+            <a class="button ghost" href="tel:08020171310">電話する</a>
+            <a class="button ghost" href="https://www.instagram.com/baseally_official?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">公式Instagramを見る</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-brand">
-          <img src="assets/icon-32.png" width="18" height="18" alt="" />
-          <span>Baseally（ベイサリー）</span>
-        </p>
-        <p class="muted">© <span id="year"></span> Baseally. All rights reserved.</p>
+      <img src="assets/icon.jpg" alt="BASEALLY" />
+      <p>野球に育てられた経験を、次の挑戦へ。</p>
+      <div class="footer-contact" aria-label="連絡先">
+        <a href="mailto:daichi.kessoku@baseally.jp">daichi.kessoku@baseally.jp</a>
+        <a href="tel:08020171310">080-2017-1310</a>
+        <a href="https://www.instagram.com/baseally_official?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">公式Instagram</a>
       </div>
+      <small>&copy; <span id="year"></span> Baseally. All rights reserved.</small>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
