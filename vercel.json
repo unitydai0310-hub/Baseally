@@ -1,11 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "https://baseally.jp/(.*)",
-      "destination": "https://www.baseally.jp/$1",
-      "permanent": true
-    }
-  ]
+  "trailingSlash": false
 }
