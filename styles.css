@@ -380,6 +380,18 @@ body.is-loaded .opening p {
   align-items: start;
 }
 
+@media (min-width: 901px) {
+  #about .statement-grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+    gap: clamp(72px, 8vw, 140px);
+  }
+
+  #about .statement-body {
+    justify-self: end;
+    max-width: 460px;
+  }
+}
+
 .line-title {
   margin: 0;
   font-size: clamp(1.3rem, 3.2vw, 2.8rem);
